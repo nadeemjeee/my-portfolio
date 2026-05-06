@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Saved Contacts</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/contacts">Contacts</a>
+</nav>
+
+<div class="card">
+    <h1>Saved Contacts</h1>
+
+    {% for contact in contacts %}
+        <p>{{ contact[0] }} - {{ contact[1] }}</p>
+    {% else %}
+        <p>No contacts saved yet.</p>
+    {% endfor %}
+
+    <a href="/">Back Home</a>
+</div>
+
+</body>
+</html>
