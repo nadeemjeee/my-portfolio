@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request
-import csv
 import sqlite3
 
 def init_db():
